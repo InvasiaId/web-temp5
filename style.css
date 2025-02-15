@@ -1,0 +1,160 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baumans", serif;
+  line-height: 1.6;
+  color: #E6E1E7;
+  background-color: #191825;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 52px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #E6E1E7;
+  font-size: 18px;
+}
+
+.contact-button {
+  background: linear-gradient(to top, #7579E7 0%, #8796EE 25%, #97FFFB 70%, #B9FFFC 86%);
+  padding: 10px 25px;
+  font-weight: bold;
+}
+
+/* Intro section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  color: #E6E1E7;
+}
+
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image img {
+  width: 500px;
+  height: auto;
+  background: linear-gradient(to top, #7579E7 0%, #8796EE 25%, #97FFFB 70%, #B9FFFC 86%);
+  padding: 20px;
+}
+
+/* Footer */
+.footer-content {
+  text-align: center;
+  padding: 20px;
+  color: #191825;
+  background: linear-gradient(to top, #7579E7 0%, #8796EE 25%, #97FFFB 70%, #B9FFFC 86%);
+  border-radius: 80px 80px 0px 0px;
+}
+
+.footer-links {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #191825;
+}
+
+.social-links {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: 0 5px;
+  color: #191825;
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .intro {
+      flex-direction: column;
+  }
+
+  .intro-text,
+  .intro-image {
+      flex: none;
+      margin-bottom: 20px;
+  }
+
+  .navbar ul{
+    gap: 20px;
+  }
+
+  .intro-image img{
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .intro-image img{
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .navbar ul li a {
+    font-size: 12px;
+  }
+
+  .navbar h1 {
+    font-size: 14px;
+  }
+
+  .navbar{
+    gap: 10px;
+  }
+}
